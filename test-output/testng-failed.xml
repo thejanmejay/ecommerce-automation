@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [AutomationPractice Suite]">
-  <test thread-count="3" parallel="tests" name="Chrome Tests(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="3" parallel="tests" name="Firefox Tests(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
+      <class name="com.automationpractice.tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationpractice.tests.LoginTest -->
       <class name="com.automationpractice.tests.SwitchTabTest">
         <methods>
           <include name="setUp"/>
@@ -11,8 +18,15 @@
           <include name="switchTabsTest"/>
         </methods>
       </class> <!-- com.automationpractice.tests.SwitchTabTest -->
+      <class name="com.automationpractice.tests.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchBarTest"/>
+        </methods>
+      </class> <!-- com.automationpractice.tests.SearchTest -->
     </classes>
-  </test> <!-- Chrome Tests(failed) -->
+  </test> <!-- Firefox Tests(failed) -->
   <test thread-count="3" parallel="tests" name="Edge Tests(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
@@ -25,8 +39,8 @@
       </class> <!-- com.automationpractice.tests.SwitchTabTest -->
     </classes>
   </test> <!-- Edge Tests(failed) -->
-  <test thread-count="3" parallel="tests" name="Firefox Tests(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="3" parallel="tests" name="Chrome Tests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.automationpractice.tests.SwitchTabTest">
         <methods>
@@ -36,5 +50,5 @@
         </methods>
       </class> <!-- com.automationpractice.tests.SwitchTabTest -->
     </classes>
-  </test> <!-- Firefox Tests(failed) -->
+  </test> <!-- Chrome Tests(failed) -->
 </suite> <!-- Failed suite [AutomationPractice Suite] -->

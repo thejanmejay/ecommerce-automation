@@ -11,7 +11,7 @@ public class SearchTest extends BaseTest{
 	public void searchBarTest() {
 		Search search = new Search(driver);
 		search.searchForItem("dress");
-		System.out.println("Search action performed. " + driver.getCurrentUrl());
+		System.out.println("Search action performed");
 	}
 	
 }
