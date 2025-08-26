@@ -1,6 +1,5 @@
 package com.automationpractice.login;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,10 +7,11 @@ public class LoginPage {
 
     private WebDriver driver;
 
-    // Locators
+    // Locators for login
     private By signInLink = By.xpath("//a[normalize-space()='Sign in']");
-    private By emailCreate = By.id("email_create");
-    private By submitCreate = By.id("SubmitCreate");
+    private By emailInput = By.id("email");
+    private By passwordInput = By.id("passwd");
+    private By signInBtn = By.id("SubmitLogin");
 
     // Constructor
     public LoginPage(WebDriver driver) {
@@ -22,19 +22,23 @@ public class LoginPage {
     public void clickSignIn() {
         driver.findElement(signInLink).click();
     }
-
     public void enterEmail(String email) {
-        driver.findElement(emailCreate).sendKeys(email);
+        driver.findElement(emailInput).sendKeys(email);
     }
 
-    public void clickCreateAccount() {
-        driver.findElement(submitCreate).click();
+    public void enterPassword(String password) {
+        driver.findElement(passwordInput).sendKeys(password);
+    }
+
+    public void clickSignbtn() {
+        driver.findElement(signInBtn).click();
     }
 
     // Combined action
-    public void createNewAccount(String email) {
-        clickSignIn();
+    public void login(String email, String password) {
+    	clickSignIn();
         enterEmail(email);
-        clickCreateAccount();
+        enterPassword(password);
+        clickSignbtn();
     }
 }

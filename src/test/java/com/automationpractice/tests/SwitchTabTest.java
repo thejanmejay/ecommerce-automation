@@ -6,7 +6,7 @@ import com.automationpractice.base.BaseTest;
 import com.automationpractice.pages.TabSwitch;
 
 public class SwitchTabTest extends BaseTest{
-	@Test
+	@Test(groups= {"TabSwitch"})
 	public void switchTabsTest() {
 			    TabSwitch tabSwitch = new TabSwitch(driver);
 			    tabSwitch.switchToTab("tab1");
