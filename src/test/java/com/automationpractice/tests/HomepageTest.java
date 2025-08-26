@@ -8,7 +8,7 @@ import com.automationpractice.pages.HomesPage;
 
 public class HomepageTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"HomePage"})
     public void testHomePageTitle() {
         HomesPage homePage = new HomesPage(driver);
 

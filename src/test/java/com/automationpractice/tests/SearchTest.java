@@ -7,7 +7,7 @@ import com.automationpractice.pages.Search;
 
 public class SearchTest extends BaseTest{
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void searchBarTest() {
 		Search search = new Search(driver);
 		search.searchForItem("dress");
