@@ -8,7 +8,7 @@
 			<class name="com.automationpractice.tests.SwitchTabTest" />
 			<class name="com.automationpractice.tests.LoginTest" />
 			<class name="com.automationpractice.tests.CreateAccountTest" />
-
+			<class name="com.automationpractice.tests.HomeBannersTest" />
 		</classes>
 	</test>
 
@@ -20,6 +20,7 @@
 			<class name="com.automationpractice.tests.SwitchTabTest" />
 			<class name="com.automationpractice.tests.LoginTest" />
 			<class name="com.automationpractice.tests.CreateAccountTest" />
+			<class name="com.automationpractice.tests.HomeBannersTest" />
 
 		</classes>
 	</test>
@@ -32,6 +33,7 @@
 			<class name="com.automationpractice.tests.SwitchTabTest" />
 			<class name="com.automationpractice.tests.LoginTest" />
 			<class name="com.automationpractice.tests.CreateAccountTest" />
+			<class name="com.automationpractice.tests.HomeBannersTest" />
 
 
 		</classes>
