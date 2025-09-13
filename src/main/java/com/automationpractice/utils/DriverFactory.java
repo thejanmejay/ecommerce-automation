@@ -19,7 +19,7 @@ public class DriverFactory {
     } else if (browser.equalsIgnoreCase("edge")) {
     	//driver setup form local storage of edge
     	System.setProperty("webdriver.edge.driver",
-    	        "C:\\Users\\JanmejaySingh\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+    	        "C:\\Drivers\\msedgedriver.exe");
     	    driver.set(new EdgeDriver());
     } else {
         System.out.println("Browser not supported, launching Chrome by default.");

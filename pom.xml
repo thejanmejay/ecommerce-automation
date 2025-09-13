@@ -8,12 +8,7 @@
 
 
 	<dependencies>
-		<!-- Sanpshot of project-->
-		<dependency>
-			<groupId>com.ui.testing</groupId>
-			<artifactId>ui-automation-testing</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+	
 
 		<!-- Selenium -->
 		<dependency>
