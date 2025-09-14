@@ -8,12 +8,7 @@
 
 
 	<dependencies>
-		<!-- Sanpshot of project-->
-		<dependency>
-			<groupId>com.ui.testing</groupId>
-			<artifactId>ui-automation-testing</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 
 		<!-- Selenium -->
 		<dependency>
@@ -21,7 +16,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.35.0</version>
 		</dependency>
-
+		
 
 		<!-- WebDriver Manager -->
 		<dependency>
@@ -83,11 +78,11 @@
 			<version>2.20.0</version>
 		</dependency>
 
-<dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.11.0</version>
-    </dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.11.0</version>
+		</dependency>
 	</dependencies>
 
 

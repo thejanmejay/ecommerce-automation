@@ -10,26 +10,23 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver initDriver(String browser) {
-    if (browser.equalsIgnoreCase("chrome")) {
-        WebDriverManager.chromedriver().setup();
-        driver.set(new ChromeDriver());
-    } else if (browser.equalsIgnoreCase("firefox")) {
-        WebDriverManager.firefoxdriver().setup();
-        driver.set(new FirefoxDriver());
-    } else if (browser.equalsIgnoreCase("edge")) {
-    	//driver setup form local storage of edge
-    	System.setProperty("webdriver.edge.driver",
-    	        "C:\\Drivers\\msedgedriver.exe");
-    	    driver.set(new EdgeDriver());
-    } else {
-        System.out.println("Browser not supported, launching Chrome by default.");
-        WebDriverManager.chromedriver().setup();
-        driver.set(new ChromeDriver());
-    }
-    driver.get().manage().window().maximize();
-    return driver.get();
-}
+        if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver.set(new ChromeDriver());
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver.set(new FirefoxDriver());
+        } else if (browser.equalsIgnoreCase("edge")) {
+            // Use manually downloaded EdgeDriver
+            System.setProperty("webdriver.edge.driver", "C:\\drivers\\msedgedriver.exe");
+            driver.set(new EdgeDriver());
+        } else {
+            throw new IllegalArgumentException("Browser not supported: " + browser);
+        }
 
+        driver.get().manage().window().maximize();
+        return driver.get();
+    }
 
     public static WebDriver getDriver() {
         return driver.get();
@@ -38,7 +35,7 @@ public class DriverFactory {
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();
-            driver.remove(); // clean thread local
+            driver.remove();
         }
     }
 }

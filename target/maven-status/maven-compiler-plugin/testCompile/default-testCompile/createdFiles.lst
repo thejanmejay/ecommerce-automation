@@ -1,0 +1,7 @@
+com\automationpractice\tests\SwitchTabTest.class
+com\automationpractice\tests\CreateAccountTest.class
+com\automationpractice\tests\SearchTest.class
+com\automationpractice\base\BaseTest.class
+com\automationpractice\tests\HomeBannersTest.class
+com\automationpractice\tests\HomepageTest.class
+com\automationpractice\tests\LoginTest.class

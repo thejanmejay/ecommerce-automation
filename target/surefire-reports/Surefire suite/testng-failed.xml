@@ -3,20 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.automationpractice.tests.LoginTest">
+      <class name="com.automationpractice.tests.SwitchTabTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="createAccountTest"/>
+          <include name="switchTabsTest"/>
         </methods>
-      </class> <!-- com.automationpractice.tests.LoginTest -->
-      <class name="com.automationpractice.tests.HomepageTest">
-        <methods>
-          <include name="testHomePageTitle"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.automationpractice.tests.HomepageTest -->
+      </class> <!-- com.automationpractice.tests.SwitchTabTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

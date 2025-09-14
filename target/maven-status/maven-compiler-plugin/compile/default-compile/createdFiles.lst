@@ -1,0 +1,7 @@
+com\automationpractice\pages\TabSwitch.class
+com\automationpractice\pages\HomesPage.class
+com\automationpractice\login\CreateAccount.class
+com\automationpractice\login\LoginPage.class
+com\automationpractice\pages\Search.class
+com\automationpractice\utils\DriverFactory.class
+com\automationpractice\pages\HomeBanners.class

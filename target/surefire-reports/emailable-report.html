@@ -9,81 +9,42 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">781</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">126,997</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automationpractice.tests.HomepageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1756024912455</td><td rowspan="1">678</td></tr><tr class="failedodd"><td rowspan="1">com.automationpractice.tests.LoginTest</td><td><a href="#m1">setUp</a></td><td rowspan="1">1756024913151</td><td rowspan="1">36</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.automationpractice.tests.HomepageTest</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1756024913147</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.automationpractice.tests.LoginTest</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1756024913190</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.automationpractice.tests.HomepageTest</td><td><a href="#m4">testHomePageTitle</a></td><td rowspan="1">1756024913143</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td rowspan="1">com.automationpractice.tests.LoginTest</td><td><a href="#m5">createAccountTest</a></td><td rowspan="1">1756024913188</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automationpractice.tests.SwitchTabTest</td><td><a href="#m0">switchTabsTest</a></td><td rowspan="1">1757756121968</td><td rowspan="1">4255</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationpractice.tests.CreateAccountTest</td><td><a href="#m1">createAccountTest</a></td><td rowspan="1">1757756025280</td><td rowspan="1">2317</td></tr><tr class="passedodd"><td rowspan="4">com.automationpractice.tests.HomeBannersTest</td><td><a href="#m2">testBannerCount</a></td><td rowspan="1">1757756041407</td><td rowspan="1">70</td></tr><tr class="passedodd"><td><a href="#m3">testBannerDetails</a></td><td rowspan="1">1757756052880</td><td rowspan="1">4386</td></tr><tr class="passedodd"><td><a href="#m4">testBannersDisplayed</a></td><td rowspan="1">1757756066515</td><td rowspan="1">104</td></tr><tr class="passedodd"><td><a href="#m5">testClickBanner</a></td><td rowspan="1">1757756075488</td><td rowspan="1">2967</td></tr><tr class="passedeven"><td rowspan="1">com.automationpractice.tests.HomepageTest</td><td><a href="#m6">testHomePageTitle</a></td><td rowspan="1">1757756091855</td><td rowspan="1">42</td></tr><tr class="passedodd"><td rowspan="1">com.automationpractice.tests.LoginTest</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1757756101789</td><td rowspan="1">3120</td></tr><tr class="passedeven"><td rowspan="1">com.automationpractice.tests.SearchTest</td><td><a href="#m8">searchBarTest</a></td><td rowspan="1">1757756115725</td><td rowspan="1">367</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.automationpractice.tests.HomepageTest#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/html5/LocationContext
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at com.automationpractice.utils.DriverFactory.initDriver(DriverFactory.java:15)
-	at com.automationpractice.base.BaseTest.setUp(BaseTest.java:16)
+<h2>Surefire test</h2><h3 id="m0">com.automationpractice.tests.SwitchTabTest#switchTabsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;sf-menu&apos;]//a[@title=&apos;Dresses&apos;][not(ancestor::ul[contains(@style,&apos;display: none&apos;)])]&quot;}
+  (Session info: chrome=140.0.7339.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7081ce82f01fcdf4ced2337ba9699b47, findElement {using=xpath, value=//ul[@class=&apos;sf-menu&apos;]//a[@title=&apos;Dresses&apos;][not(ancestor::ul[contains(@style,&apos;display: none&apos;)])]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49552}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49552/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7081ce82f01fcdf4ced2337ba9699b47
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at com.automationpractice.pages.TabSwitch.switchToTabByTitle(TabSwitch.java:29)
+	at com.automationpractice.pages.TabSwitch.switchToTab1(TabSwitch.java:50)
+	at com.automationpractice.tests.SwitchTabTest.switchTabsTest(SwitchTabTest.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.html5.LocationContext
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 55 more
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automationpractice.tests.LoginTest#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/html5/LocationContext
-	at com.automationpractice.utils.DriverFactory.initDriver(DriverFactory.java:15)
-	at com.automationpractice.base.BaseTest.setUp(BaseTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.html5.LocationContext
-	... 37 more
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automationpractice.tests.HomepageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.automationpractice.tests.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.automationpractice.tests.HomepageTest#testHomePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/html5/LocationContext
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at com.automationpractice.utils.DriverFactory.initDriver(DriverFactory.java:15)
-	at com.automationpractice.base.BaseTest.setUp(BaseTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.html5.LocationContext
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 55 more
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.automationpractice.tests.LoginTest#createAccountTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/html5/LocationContext
-	at com.automationpractice.utils.DriverFactory.initDriver(DriverFactory.java:15)
-	at com.automationpractice.base.BaseTest.setUp(BaseTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.html5.LocationContext
-	... 37 more
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automationpractice.tests.CreateAccountTest#createAccountTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automationpractice.tests.HomeBannersTest#testBannerCount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automationpractice.tests.HomeBannersTest#testBannerDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automationpractice.tests.HomeBannersTest#testBannersDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automationpractice.tests.HomeBannersTest#testClickBanner</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.automationpractice.tests.HomepageTest#testHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.automationpractice.tests.LoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.automationpractice.tests.SearchTest#searchBarTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
